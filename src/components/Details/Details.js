@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import {
   Wrapper,
   H1,
@@ -10,12 +11,7 @@ import {
 
 function Details(props) {
   return props.show ? (
-    <Wrapper
-      style={{
-        transform: props.show ? "translateY(0)" : "translateY(-100vh)",
-        opacity: props.show ? "1" : "0",
-      }}
-    >
+    <Wrapper>
       <H1>Event 1</H1>
       <Para>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -33,13 +29,17 @@ function Details(props) {
         commodo consequat.
       </Para>
       <Buttons>
-        <CancelButton type="submit" onClick={props.clicked}>
+        <CancelButton type="submit" onClick={props.clickedCancel}>
           CANCEL
         </CancelButton>
-        <ContinueButton type="submit">BOOK NOW</ContinueButton>
+        <ContinueButton
+          type="submit"
+          onClick={() => props.history.push("/contact-data")}
+        >
+          BOOK NOW
+        </ContinueButton>
       </Buttons>
     </Wrapper>
   ) : null;
 }
-
-export default Details;
+export default withRouter(Details);

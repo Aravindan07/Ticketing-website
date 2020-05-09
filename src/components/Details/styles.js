@@ -63,6 +63,10 @@ export const CancelButton = styled.button`
   padding: 10px;
   border: none;
   border-radius: 5px;
+  :hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
+  }
 `;
 
 export const ContinueButton = styled.button`
@@ -72,4 +76,8 @@ export const ContinueButton = styled.button`
   padding: 10px;
   border: none;
   border-radius: 5px;
+  :hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
+  }
 `;

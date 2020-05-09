@@ -2,12 +2,31 @@ import styled from "styled-components";
 
 export const Header = styled.div`
   width: 100%;
-  height: 100px;
+  /* height: 100px; */
   background: #6c63fe;
   color: #ffffff;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+`;
+
+export const H1 = styled.h1`
+  margin-left: 20px;
+`;
+export const Button = styled.button`
+  margin-right: 40px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  background: palevioletred;
+  color: #ffffff;
+  :hover {
+    cursor: pointer;
+    background: #15b996;
+  }
 `;
 export const Search = styled.div`
   text-align: center;
