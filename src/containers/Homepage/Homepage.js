@@ -21,7 +21,7 @@ function Homepage(props) {
           <Anchor as={Link} to="/events">
             Events
           </Anchor>
-          <Anchor as={Link} to="/signin">
+          <Anchor as={Link} to="/login">
             SignIn
           </Anchor>
         </Navigation>

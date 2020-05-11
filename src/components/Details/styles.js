@@ -14,6 +14,7 @@ export const Wrapper = styled.div`
   box-sizing: border-box;
   /* transition: all 0.3s ease-out; */
   animation: enable 0.3s linear;
+  overflow: auto;
 
   @keyframes enable {
     0% {

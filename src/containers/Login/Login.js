@@ -1,4 +1,5 @@
 import React from "react";
+import { withRouter } from "react-router-dom";
 import { ReactSVG } from "react-svg";
 import fire from "../../config/fire";
 import { Wrapper, AvatarIcon, Form, Input, Buttons, Button } from "./styles";
@@ -20,6 +21,7 @@ class Login extends React.Component {
       .catch((err) => {
         console.log(err.message);
       });
+    this.props.history.push("/events");
   };
 
   signup = (event) => {
@@ -81,4 +83,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default withRouter(Login);
