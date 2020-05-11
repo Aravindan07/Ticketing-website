@@ -4,6 +4,7 @@ src/config/
 
 # dependencies
 /node_modules
+src/config/
 /.pnp
 .pnp.js
 
