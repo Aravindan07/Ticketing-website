@@ -3,6 +3,11 @@ import { ReactSVG } from "react-svg";
 import PaymentIcon from "../images/icons/payment.svg";
 import { Wrapper, Icon, DetailsCard, Details, H2, Button } from "./styles";
 class Payment extends React.Component {
+  state = {
+    isLoadable: false,
+    events: [],
+  };
+
   render() {
     return (
       <Wrapper>

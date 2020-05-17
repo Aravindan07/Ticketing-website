@@ -12,7 +12,7 @@ import {
 function Details(props) {
   return props.show ? (
     <Wrapper>
-      <H1>Event 1</H1>
+      <H1>{props.heading}</H1>
       <Para>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

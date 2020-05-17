@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Header = styled.div`
-  width: 100%;
+  min-width: 100%;
   /* height: 100px; */
   background: #6c63fe;
   color: #ffffff;
@@ -49,9 +49,9 @@ export const Input = styled.input`
   }
 `;
 export const EventsDetails = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+  display: inline-flex;
+  /* flex-wrap: wrap; */
+  /* max-width: 100%; */
 `;
 export const Event = styled.div`
   width: 250px;
@@ -60,6 +60,12 @@ export const Event = styled.div`
   margin-top: 50px;
   box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  :hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, 0.15);
+  }
+  @media screen and (max-width: 350px) {
+    margin-left: 20px;
+  }
 `;
 export const CreatedDetails = styled.p`
   color: #b3b4b6;
@@ -80,6 +86,7 @@ export const H2 = styled.h2`
   /* identical to box height */
   letter-spacing: 0.04em;
 `;
+
 export const Content = styled.p`
   padding: 10px;
   font-weight: normal;

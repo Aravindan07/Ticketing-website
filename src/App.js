@@ -4,7 +4,7 @@ import "./App.css";
 import Homepage from "./containers/Homepage/Homepage";
 import Events from "./containers/Events/Events";
 import ContactData from "./components/ContactData/ContactData";
-import Login from "./containers/Login/Login";
+// import Login from "./containers/Login/Login";
 import Payment from "./payments/payments";
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <Switch>
       <Route exact path="/" component={Homepage} />
       <Route path="/events" component={Events} />
-      <Route path="/login" component={Login} />
+      {/* <Route path="/login" component={Login} /> */}
       <Route path="/contact-data" component={ContactData} />
       <Route path="/payments" component={Payment} />
     </Switch>
